@@ -7,7 +7,8 @@ suite = unittest.TestSuite()
 # 将测试用例添加到测试套件
 suite.addTest(unittest.makeSuite(TestTpshopLogin))
 # 定义测试报告的路径和名称
-report = "./report/tpshop{}.html".format(time.strftime("%Y%m%d_%H%M%S"))
+# report = "./report/tpshop{}.html".format(time.strftime("%Y%m%d_%H%M%S"))
+report = "./report/tpshop.html"
 with open(report, "wb")as f:
     # 初始化runner
     runner = HTMLTestRunner(f,verbosity=1, description="这是一个测试报告", title="tpshop报告")
